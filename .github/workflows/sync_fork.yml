@@ -1,4 +1,4 @@
-name: sync_fork
+name: Sync Fork
 
 on:
   schedule:
@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: TG908/fork-sync@v1.1
+    - uses: atactions/fork-sync@v1.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}         
