@@ -1,0 +1,13 @@
+name: sync_fork
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: TG908/fork-sync@v1.1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}         
